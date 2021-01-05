@@ -13,6 +13,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
   localStream = stream;
 }).catch( error => {
   // エラーログを出力
+  alert(error);
   console.error('mediaDevice.getUserMedia() error:', error);
   return;
 });
