@@ -23,7 +23,6 @@ const peer = new Peer({
     debug: 3,
 });
 
-
 //正常にサーバーに接続できたときに呼ばれる
 peer.on('open', function(peerId)  
 {
@@ -55,7 +54,6 @@ peer.on('open', function(peerId)
 //     const mediaConnection = peer.call(theirId, localStream);
 //     setEventListener(mediaConnection);
 // };
-
 
 //選択したIDにCallする
 document.querySelector('body').addEventListener('click', function(event)
